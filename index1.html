@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets\style1.css">
-    <link rel="stylesheet" href="script.js">
     <title>Indian Institute of Information Technology Surat</title>
 </head>
 <body>
@@ -15,7 +14,13 @@
         <a href="#admission">Admission</a>
         <a href="#college">College</a>
         <a href="#placement">Placements</a>
-        <a href="#Academics">Academics</a>
+        <a href="#Academics">Academics</a><script>
+            function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+            }
+            </script>
+            
       </div>
       
       <div class="content">
@@ -26,10 +31,19 @@
           <a href="https://en.wikipedia.org/wiki/Indian_Institute_of_Information_Technology,_Surat"><i class="fa fa-fw fa-search"></i> Search</a> 
           <a href="assets\aboutme.html"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
           <a href="assets/signup.page\signup.html"><i class="fa fa-fw fa-user"></i> Login</a>
+
+          <button class="button button5" onclick="myFunction()">dark mode</button>
+          <script>
+            function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+            }
+            </script>
+            
         </div>
-        <aside>
+        <!--<aside>
           <img src="assets\images\th.jpg" alt="logo" height="220px" width="192px">
-        </aside>
+        </aside>-->
         
         <p>IIIT Surat is a non-profit PPP engineering institution founded by the MHRD.  IIIT Surat is designated as an Institution of National Importance. IIIT Surat offers undergraduate and doctoral degrees in engineering. IIIT Surat is now operating from SVNIT, which serves as a temporary campus. The permanent campus of IIIT Surat is currently being built.</p>
         <h4>History :-</h4>
@@ -137,6 +151,26 @@
               </div>
           </div>
           </footer>
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+          <script>
+            let mybutton = document.getElementById("myBtn");
+            
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+
 
 
 
